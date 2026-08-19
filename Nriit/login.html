@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>NRIIT AI & ML - Student Login</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+
+background:linear-gradient(rgba(13,71,161,.8),rgba(13,71,161,.8)),
+url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80");
+
+background-size:cover;
+background-position:center;
+
+}
+
+.login-box{
+
+width:420px;
+background:white;
+padding:35px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,.3);
+
+}
+
+.logo{
+
+text-align:center;
+font-size:30px;
+font-weight:bold;
+color:#0d47a1;
+
+}
+
+.subtitle{
+
+text-align:center;
+margin-top:10px;
+margin-bottom:25px;
+color:gray;
+
+}
+
+.input-group{
+
+margin-bottom:20px;
+
+}
+
+.input-group label{
+
+display:block;
+margin-bottom:8px;
+font-weight:600;
+
+}
+
+.input-group input{
+
+width:100%;
+padding:12px;
+border:1px solid #ccc;
+border-radius:8px;
+font-size:15px;
+
+}
+
+.input-group input:focus{
+
+border:1px solid #0d47a1;
+outline:none;
+
+}
+
+.show{
+
+margin-bottom:20px;
+
+}
+
+button{
+
+width:100%;
+padding:13px;
+background:#0d47a1;
+color:white;
+font-size:18px;
+border:none;
+border-radius:8px;
+cursor:pointer;
+
+}
+
+button:hover{
+
+background:#1565c0;
+
+}
+
+.links{
+
+margin-top:20px;
+text-align:center;
+
+}
+
+.links a{
+
+text-decoration:none;
+color:#0d47a1;
+font-weight:600;
+
+}
+
+.footer{
+
+margin-top:25px;
+text-align:center;
+font-size:14px;
+color:gray;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="login-box">
+
+<div class="logo">
+
+🎓 NRIIT AI & ML
+
+</div>
+
+<p class="subtitle">
+
+Student Login Portal
+
+</p>
+
+<form onsubmit="return login()">
+
+<div class="input-group">
+
+<label>Roll Number</label>
+
+<input
+type="text"
+id="rollno"
+placeholder="Enter Roll Number"
+required>
+
+</div>
+
+<div class="input-group">
+
+<label>Password</label>
+
+<input
+type="password"
+id="password"
+placeholder="Enter Password"
+required>
+
+</div>
+
+<div class="show">
+
+<input
+type="checkbox"
+onclick="showPassword()">
+
+Show Password
+
+</div>
+
+<button type="submit">
+
+Login
+
+</button>
+
+</form>
+
+<div class="links">
+
+<p>
+
+<a href="#">Forgot Password?</a>
+
+</p>
+
+<br>
+
+<p>
+
+<a href="index.html">← Back to Home</a>
+
+</p>
+
+</div>
+
+<div class="footer">
+
+© 2026 NRI Institute of Technology
+
+</div>
+
+</div>
+
+<script>
+
+function showPassword(){
+
+let x=document.getElementById("password");
+
+if(x.type==="password"){
+x.type="text";
+}else{
+x.type="password";
+}
+
+}
+
+function login(){
+
+let rollno=document.getElementById("rollno").value.trim().toUpperCase();
+
+let password=document.getElementById("password").value.trim().toUpperCase();
+
+if(
+
+(rollno==="24KP1A6136" && password==="24KP1A6136") ||
+
+(rollno==="24KP1A6134" && password==="24KP1A6134") ||
+
+(rollno==="24KP1A6108" && password==="24KP1A6108") ||
+
+(rollno==="24KP1A6107" && password==="24KP1A6107") ||
+
+(rollno==="24KP1A6161" && password==="24KP1A6161")
+
+){
+
+alert("Login Successful!");
+
+window.location.href="dashboard.html";
+
+}else{
+
+alert("Invalid Roll Number or Password!");
+
+}
+
+return false;
+
+}
+
+</script>
+<script type="module" src="firebase.js"></script>
+</body>
+</html>

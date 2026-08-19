@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Student Profile</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f4f6f9;
+}
+
+header{
+
+background:#0d47a1;
+color:white;
+padding:18px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+}
+
+header h2{
+font-size:24px;
+}
+
+header a{
+
+text-decoration:none;
+color:white;
+background:#ff9800;
+padding:10px 18px;
+border-radius:5px;
+
+}
+
+.container{
+
+width:90%;
+max-width:1000px;
+margin:40px auto;
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 4px 12px rgba(0,0,0,.1);
+
+}
+
+.profile{
+
+display:flex;
+flex-wrap:wrap;
+gap:40px;
+align-items:center;
+
+}
+
+.photo{
+
+text-align:center;
+
+}
+
+.photo img{
+
+width:180px;
+height:180px;
+border-radius:50%;
+border:5px solid #0d47a1;
+
+}
+
+.photo button{
+
+margin-top:15px;
+padding:10px 20px;
+background:#1565c0;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+
+}
+
+.details{
+
+flex:1;
+
+}
+
+.details table{
+
+width:100%;
+border-collapse:collapse;
+
+}
+
+.details table td{
+
+padding:12px;
+border-bottom:1px solid #ddd;
+
+}
+
+.details table td:first-child{
+
+font-weight:bold;
+color:#0d47a1;
+width:220px;
+
+}
+
+.section-title{
+
+margin-top:40px;
+margin-bottom:20px;
+color:#0d47a1;
+
+}
+
+.skills{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+
+}
+
+.skill{
+
+background:#eef4ff;
+padding:15px;
+border-radius:10px;
+text-align:center;
+
+}
+
+footer{
+
+margin-top:40px;
+text-align:center;
+color:gray;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h2>🎓 Student Profile</h2>
+
+<a href="dashboard.html">← Dashboard</a>
+
+</header>
+
+<div class="container">
+
+<div class="profile">
+
+<div class="photo">
+
+<img src="images/profile.png" alt="Student Photo">
+
+<br>
+
+<button>Upload Photo</button>
+
+</div>
+
+<div class="details">
+
+<table>
+
+<tr>
+<td>Name</td>
+<td>Sudheer Babu</td>
+</tr>
+
+<tr>
+<td>Roll Number</td>
+<td>24KP1A6136</td>
+</tr>
+
+<tr>
+<td>Branch</td>
+<td>Artificial Intelligence & Machine Learning</td>
+</tr>
+
+<tr>
+<td>Year</td>
+<td>3rd Year</td>
+</tr>
+
+<tr>
+<td>Section</td>
+<td>A</td>
+</tr>
+
+<tr>
+<td>Date of Birth</td>
+<td>26-04-2005</td>
+</tr>
+
+<tr>
+<td>Email</td>
+<td>sudheerbabugurram264@gmail.com</td>
+</tr>
+
+<tr>
+<td>Phone</td>
+<td>8639158590</td>
+</tr>
+
+<tr>
+<td>Address</td>
+<td>Prakasam District, Andhra Pradesh</td>
+</tr>
+
+<tr>
+<td>Blood Group</td>
+<td>AB-</td>
+</tr>
+
+</table
+
+</div>
+
+</div>
+
+<h2 class="section-title">Academic Summary</h2>
+
+<div class="skills">
+
+<div class="skill">
+<h3>CGPA</h3>
+<p>8.85</p>
+</div>
+
+<div class="skill">
+<h3>Attendance</h3>
+<p>92%</p>
+</div>
+
+<div class="skill">
+<h3>Credits Earned</h3>
+<p>112</p>
+</div>
+
+<div class="skill">
+<h3>Current Semester</h3>
+<p>5th Semester</p>
+</div>
+
+</div>
+
+<footer>
+
+<p>
+
+© 2026 NRI Institute of Technology | AI & ML Department
+
+</p>
+
+</footer>
+
+</div>
+<script type="module" src="firebase.js"></script>
+</body>
+</html>

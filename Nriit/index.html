@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>NRI Institute of Technology - AI & ML Department</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f5f7fb;
+color:#333;
+}
+
+header{
+background:#0d47a1;
+color:#fff;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 60px;
+position:sticky;
+top:0;
+}
+
+.logo{
+font-size:24px;
+font-weight:bold;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:25px;
+}
+
+nav ul li a{
+color:#fff;
+text-decoration:none;
+font-weight:500;
+}
+
+nav ul li a:hover{
+color:#ffeb3b;
+}
+
+.hero{
+height:90vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+flex-direction:column;
+color:white;
+background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80");
+background-size:cover;
+background-position:center;
+}
+
+.hero h1{
+font-size:55px;
+}
+
+.hero h2{
+margin-top:10px;
+font-size:30px;
+color:#ffeb3b;
+}
+
+.hero p{
+margin-top:20px;
+width:70%;
+font-size:18px;
+}
+
+.btn{
+display:inline-block;
+margin-top:30px;
+padding:15px 35px;
+background:#ff9800;
+color:white;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+}
+
+.btn:hover{
+background:#e68900;
+}
+
+section{
+padding:60px;
+}
+
+.title{
+text-align:center;
+font-size:35px;
+color:#0d47a1;
+margin-bottom:40px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+text-align:center;
+}
+
+.card h3{
+margin:15px 0;
+color:#0d47a1;
+}
+
+.about{
+display:flex;
+gap:40px;
+align-items:center;
+flex-wrap:wrap;
+}
+
+.about img{
+width:450px;
+border-radius:15px;
+}
+
+.about-text{
+flex:1;
+}
+
+.about-text h2{
+color:#0d47a1;
+margin-bottom:15px;
+}
+
+.subjects ul{
+columns:2;
+font-size:18px;
+line-height:2;
+}
+
+.faculty{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.faculty-card{
+background:white;
+padding:20px;
+text-align:center;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.faculty-card img{
+width:120px;
+height:120px;
+border-radius:50%;
+margin-bottom:15px;
+}
+
+.contact{
+background:#0d47a1;
+color:white;
+padding:50px;
+text-align:center;
+}
+
+footer{
+background:#082567;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+}
+
+nav ul{
+flex-wrap:wrap;
+justify-content:center;
+margin-top:15px;
+}
+
+.hero h1{
+font-size:36px;
+}
+
+.hero h2{
+font-size:24px;
+}
+
+.hero p{
+width:90%;
+}
+
+.about{
+flex-direction:column;
+}
+
+.about img{
+width:100%;
+}
+
+.subjects ul{
+columns:1;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">🎓 NRIIT AI & ML</div>
+
+<nav>
+
+<ul>
+
+<li><a href="#">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#subjects">Subjects</a></li>
+<li><a href="#faculty">Faculty</a></li>
+<li><a href="#contact">Contact</a></li>
+<li><a href="login.html">Login</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h1>NRI Institute of Technology</h1>
+
+<h2>Artificial Intelligence & Machine Learning Department</h2>
+
+<p>
+Welcome to the AI & Machine Learning Department.
+Learn Artificial Intelligence, Deep Learning,
+Machine Learning, Data Science and build the future.
+</p>
+
+<a href="login.html" class="btn">Student Login</a>
+
+</section>
+
+<section id="about">
+
+<h2 class="title">About AI & ML Department</h2>
+
+<div class="about">
+
+<img src="aiml.png" alt="AI & ML">
+
+<div class="about-text">
+
+<h2>Welcome to AI & ML</h2>
+
+<p>
+
+The Artificial Intelligence & Machine Learning Department
+focuses on intelligent systems, robotics,
+deep learning, data science and real-world AI applications.
+Students gain practical experience through projects,
+hackathons, internships and industry collaborations.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="title">Department Features</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>🤖 Artificial Intelligence</h3>
+
+<p>Learn intelligent systems and AI applications.</p>
+
+</div>
+
+<div class="card">
+
+<h3>📊 Machine Learning</h3>
+
+<p>Build predictive models using modern algorithms.</p>
+
+</div>
+
+<div class="card">
+
+<h3>💻 Coding Lab</h3>
+
+<p>Python, Java, C, TensorFlow and OpenCV Labs.</p>
+
+</div>
+
+<div class="card">
+
+<h3>🏆 Placements</h3>
+
+<p>Training, internships and campus recruitment.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="subjects" class="subjects">
+
+<h2 class="title">AI & ML Subjects</h2>
+
+<ul>
+
+<li>Python Programming</li>
+<li>Data Structures</li>
+<li>Database Management Systems</li>
+<li>Operating Systems</li>
+<li>Computer Networks</li>
+<li>Artificial Intelligence</li>
+<li>Machine Learning</li>
+<li>Deep Learning</li>
+<li>Natural Language Processing</li>
+<li>Computer Vision</li>
+<li>Cloud Computing</li>
+<li>Data Mining</li>
+
+</ul>
+
+</section>
+
+<section id="faculty">
+
+<h2 class="title">Faculty</h2>
+
+<div class="faculty">
+
+<div class="faculty-card">
+
+<img src="images/hod.jpg" alt="HOD">
+
+<h3>Head of Department</h3>
+
+<p>AI & ML Department</p>
+
+</div>
+
+<div class="faculty-card">
+
+<img src="images/faculty1.jpg" alt="Faculty">
+
+<h3>Assistant Professor</h3>
+
+<p>Machine Learning</p>
+
+</div>
+
+<div class="faculty-card">
+
+<img src="images/faculty2.jpg" alt="Faculty">
+
+<h3>Assistant Professor</h3>
+
+<p>Artificial Intelligence</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contact" class="contact">
+
+<h2>Contact Us</h2>
+
+<br>
+
+<p>NRI Institute of Technology</p>
+
+<p>AI & ML Department</p>
+
+<p>Email: aiml@nriit.edu.in</p>
+
+<p>Phone: +91 9876543210</p>
+
+</section>
+
+<footer>
+
+<p>
+© 2026 NRI Institute of Technology | AI & ML Department
+</p>
+
+</footer>
+<script type="module" src="firebase.js"></script>
+</body>
+</html>

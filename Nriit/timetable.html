@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Class Timetable</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f4f6f9;
+}
+
+header{
+background:#0d47a1;
+color:white;
+padding:18px 30px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+header h2{
+font-size:24px;
+}
+
+header a{
+text-decoration:none;
+background:#ff9800;
+color:white;
+padding:10px 20px;
+border-radius:5px;
+}
+
+.container{
+width:95%;
+max-width:1300px;
+margin:30px auto;
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.student{
+display:flex;
+justify-content:space-between;
+flex-wrap:wrap;
+margin-bottom:25px;
+}
+
+.student p{
+font-size:17px;
+margin:8px 0;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:20px;
+}
+
+th{
+background:#1565c0;
+color:white;
+padding:15px;
+}
+
+td{
+padding:15px;
+text-align:center;
+border:1px solid #ddd;
+}
+
+tr:nth-child(even){
+background:#f9f9f9;
+}
+
+.lunch{
+background:#fff3cd;
+font-weight:bold;
+color:#856404;
+}
+
+.note{
+margin-top:25px;
+padding:15px;
+background:#e8f5e9;
+border-left:5px solid green;
+}
+
+footer{
+text-align:center;
+margin-top:30px;
+color:gray;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h2>📅 Weekly Timetable</h2>
+
+<a href="dashboard.html">← Dashboard</a>
+
+</header>
+
+<div class="container">
+
+<div class="student">
+
+<p><strong>Name:</strong> Sudheer Babu</p>
+
+<p><strong>Roll No:</strong> 24KP1A6136</p>
+
+<p><strong>Branch:</strong> AI & ML</p>
+
+<p><strong>Semester:</strong> V</p>
+
+</div>
+
+<table>
+
+<tr>
+
+<th>Day</th>
+<th>9:00 - 10:00</th>
+<th>10:00 - 11:00</th>
+<th>11:00 - 12:00</th>
+<th>12:00 - 1:00</th>
+<th>1:00 - 2:00</th>
+<th>2:00 - 3:00</th>
+<th>3:00 - 4:00</th>
+
+</tr>
+
+<tr>
+
+<td><b>Monday</b></td>
+<td>Machine Learning</td>
+<td>Artificial Intelligence</td>
+<td>Data Mining</td>
+<td class="lunch">Lunch</td>
+<td>Cloud Computing</td>
+<td>Computer Vision Lab</td>
+<td>Computer Vision Lab</td>
+
+</tr>
+
+<tr>
+
+<td><b>Tuesday</b></td>
+<td>Deep Learning</td>
+<td>Machine Learning</td>
+<td>Python Lab</td>
+<td class="lunch">Lunch</td>
+<td>Python Lab</td>
+<td>NLP</td>
+<td>Library</td>
+
+</tr>
+
+<tr>
+
+<td><b>Wednesday</b></td>
+<td>Artificial Intelligence</td>
+<td>Cloud Computing</td>
+<td>Data Mining</td>
+<td class="lunch">Lunch</td>
+<td>Mini Project</td>
+<td>Mini Project</td>
+<td>Sports</td>
+
+</tr>
+
+<tr>
+
+<td><b>Thursday</b></td>
+<td>Machine Learning</td>
+<td>Deep Learning</td>
+<td>NLP</td>
+<td class="lunch">Lunch</td>
+<td>Computer Vision</td>
+<td>Placement Training</td>
+<td>Placement Training</td>
+
+</tr>
+
+<tr>
+
+<td><b>Friday</b></td>
+<td>Cloud Computing</td>
+<td>Artificial Intelligence</td>
+<td>Data Mining</td>
+<td class="lunch">Lunch</td>
+<td>ML Lab</td>
+<td>ML Lab</td>
+<td>Seminar</td>
+
+</tr>
+
+<tr>
+
+<td><b>Saturday</b></td>
+<td>Hackathon Practice</td>
+<td>Project Work</td>
+<td>Project Work</td>
+<td class="lunch">Lunch</td>
+<td>Guest Lecture</td>
+<td>Club Activity</td>
+<td>Mentoring</td>
+
+</tr>
+
+</table>
+
+<div class="note">
+
+<b>📢 Note:</b> Students are requested to attend all classes regularly.
+Carry your ID card and lab record during laboratory sessions.
+
+</div>
+
+<footer>
+
+<p>
+
+© 2026 NRI Institute of Technology | AI & ML Department
+
+</p>
+
+</footer>
+
+</div>
+<script type="module" src="firebase.js"></script>
+</body>
+</html>

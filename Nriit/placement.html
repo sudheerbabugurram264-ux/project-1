@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Placements | NRIIT AI & ML</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f4f6f9;
+}
+
+header{
+background:#0d47a1;
+color:white;
+padding:18px 30px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+header h2{
+font-size:25px;
+}
+
+header a{
+text-decoration:none;
+background:#ff9800;
+color:white;
+padding:10px 18px;
+border-radius:6px;
+}
+
+.container{
+width:95%;
+max-width:1300px;
+margin:30px auto;
+}
+
+.title{
+text-align:center;
+color:#0d47a1;
+margin-bottom:30px;
+font-size:36px;
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+margin-bottom:35px;
+}
+
+.card{
+background:white;
+padding:25px;
+text-align:center;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.card h2{
+color:#0d47a1;
+margin-bottom:10px;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+background:white;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+th{
+background:#1565c0;
+color:white;
+padding:15px;
+}
+
+td{
+padding:15px;
+text-align:center;
+border-bottom:1px solid #ddd;
+}
+
+tr:hover{
+background:#f1f5ff;
+}
+
+button{
+padding:8px 18px;
+background:#28a745;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+button:hover{
+background:#218838;
+}
+
+footer{
+text-align:center;
+padding:20px;
+margin-top:30px;
+color:gray;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h2>💼 Placement Cell</h2>
+
+<a href="dashboard.html">← Dashboard</a>
+
+</header>
+
+<div class="container">
+
+<h1 class="title">Campus Placement Drives</h1>
+
+<div class="stats">
+
+<div class="card">
+<h2>120+</h2>
+<p>Students Placed</p>
+</div>
+
+<div class="card">
+<h2>35+</h2>
+<p>Recruiting Companies</p>
+</div>
+
+<div class="card">
+<h2>12 LPA</h2>
+<p>Highest Package</p>
+</div>
+
+<div class="card">
+<h2>5.2 LPA</h2>
+<p>Average Package</p>
+</div>
+
+</div>
+
+<table>
+
+<tr>
+
+<th>Company</th>
+<th>Role</th>
+<th>Package</th>
+<th>Eligibility</th>
+<th>Drive Date</th>
+<th>Apply</th>
+
+</tr>
+
+<tr>
+<td>TCS</td>
+<td>Software Engineer</td>
+<td>4.5 LPA</td>
+<td>CGPA 7.0+</td>
+<td>15 Sept 2026</td>
+<td><button onclick="apply('TCS')">Apply</button></td>
+</tr>
+
+<tr>
+<td>Infosys</td>
+<td>System Engineer</td>
+<td>5 LPA</td>
+<td>CGPA 6.5+</td>
+<td>20 Sept 2026</td>
+<td><button onclick="apply('Infosys')">Apply</button></td>
+</tr>
+
+<tr>
+<td>Wipro</td>
+<td>Project Engineer</td>
+<td>4.2 LPA</td>
+<td>CGPA 6.5+</td>
+<td>25 Sept 2026</td>
+<td><button onclick="apply('Wipro')">Apply</button></td>
+</tr>
+
+<tr>
+<td>Accenture</td>
+<td>Associate Software Engineer</td>
+<td>6 LPA</td>
+<td>CGPA 7.0+</td>
+<td>30 Sept 2026</td>
+<td><button onclick="apply('Accenture')">Apply</button></td>
+</tr>
+
+<tr>
+<td>Cognizant</td>
+<td>Programmer Analyst</td>
+<td>5.5 LPA</td>
+<td>CGPA 7.0+</td>
+<td>05 Oct 2026</td>
+<td><button onclick="apply('Cognizant')">Apply</button></td>
+</tr>
+
+<tr>
+<td>Capgemini</td>
+<td>Analyst</td>
+<td>5.75 LPA</td>
+<td>CGPA 6.5+</td>
+<td>10 Oct 2026</td>
+<td><button onclick="apply('Capgemini')">Apply</button></td>
+</tr>
+
+<tr>
+<td>Deloitte</td>
+<td>Consultant</td>
+<td>7 LPA</td>
+<td>CGPA 7.5+</td>
+<td>15 Oct 2026</td>
+<td><button onclick="apply('Deloitte')">Apply</button></td>
+</tr>
+
+<tr>
+<td>Amazon</td>
+<td>SDE Intern</td>
+<td>10 LPA</td>
+<td>CGPA 8.0+</td>
+<td>20 Oct 2026</td>
+<td><button onclick="apply('Amazon')">Apply</button></td>
+</tr>
+
+<tr>
+<td>Microsoft</td>
+<td>Software Engineer</td>
+<td>12 LPA</td>
+<td>CGPA 8.5+</td>
+<td>25 Oct 2026</td>
+<td><button onclick="apply('Microsoft')">Apply</button></td>
+</tr>
+
+</table>
+
+</div>
+
+<footer>
+
+© 2026 NRI Institute of Technology | AI & ML Department
+
+</footer>
+
+<script>
+
+function apply(company){
+
+alert("Application submitted successfully for " + company + " placement drive!");
+
+}
+
+</script>
+<script type="module" src="firebase.js"></script>
+</body>
+</html>
